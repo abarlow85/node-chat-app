@@ -5,11 +5,6 @@ socket.on('connect', function() {
 
 });
 
-socket.emit('createMessage', {
-	from: 'Alec',
-	text: 'blah blah blah'
-});
-
 socket.on('newMessage', function(newMessage) {
 	console.log(newMessage);
 });
